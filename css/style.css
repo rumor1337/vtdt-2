@@ -1,93 +1,108 @@
-
-
 .bg-vtdt {
-    background-color: #282560;
+  background-color: #282560;
 }
+
 .border-vtdt {
   border-color: #282560;
 }
-.h-px-750{
+
+.h-px-750 {
   height: 750px;
 }
-.w-px-750{
+
+.w-px-750 {
   width: 750px;
 }
 
 .navbar {
   margin-left: 2.5rem;
   margin-right: 2.5rem;
+  border-radius: .75rem;
+  margin-top: 1rem;
 }
 
 .navbar-toggler {
-    width: 50px;
-    height: 50px;
-    padding: 0;
-    border-radius: 50%;
-    transition: 0.3s ease-in-out;
-    flex-shrink: 0;
-  }
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  border-radius: 50%;
+  transition: 0.3s ease-in-out;
+  flex-shrink: 0;
+}
+
 .navbar-toggler:focus {
-    box-shadow: none;
+  box-shadow: none;
 }
 
 .rectangle {
   border-radius: 8px;
   border-width: 10px;
-  margin-left: 10px;
-  margin-top: 10px;
   border-color: #282560;
   border-style: solid;
   background-color: transparent;
-  width: 600px;
-  height: 300px;
   margin-bottom: 3rem;
+}
+
+.left {
+  margin-left: 1rem;
 }
 
 .oval {
   border-radius: 999px;
-  padding: 80px;
   border-width: 10px;
   border-style: solid;
   border-color: #282560;
-  width: 30px;
-  height: 10px;
   background-color: transparent;
 }
 
+.mainContent {
+  margin-top: 1rem;
+  margin-left: 2.5rem;
+  padding: 0;
+  margin-right: 2.5rem;
+}
 
-  @media screen and (max-width: 991px) {
-    .navbar-collapse.collapse:not(.show) {
-      display: block;
-    }
-    .navbar-collapse {
-      position: fixed;
-      top: 0;
-      left: 0;
-      background: #212529;
-      width: 215px;
-      height: 100%;
-      z-index: 9999;
-      padding: 25px;
-      transform: translateX(-215px);
-      transition: 0.5s ease-in-out;
-      display: block;
-    }
-    .navbar-collapse.show {
-      transform: translateX(0px);
-    }
-    .nav-overlay {
-      position: absolute;
-      background: #0000007d;
-      width: 100vw;
-      height: 100vh;
-      top: 0;
-      left: 0;
-      z-index: 2;
-      transform: translateX(-100vw);
-      transition: 0.5s ease-in-out;
-      display: block;
-    }
-    .nav-overlay.active {
-      transform: translateX(0);
-    }
+.ovalGroup {
+  display: flex;
+}
+
+@media screen and (max-width: 991px) {
+  .navbar-collapse.collapse:not(.show) {
+    display: block;
   }
+
+  .navbar-collapse {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #212529;
+    width: 215px;
+    height: 100%;
+    z-index: 9999;
+    padding: 25px;
+    transform: translateX(-215px);
+    transition: 0.5s ease-in-out;
+    display: block;
+  }
+
+  .navbar-collapse.show {
+    transform: translateX(0px);
+  }
+
+  .nav-overlay {
+    position: absolute;
+    /* background: #0000007d; */
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transform: translateX(-100vw);
+    transition: 0.5s ease-in-out;
+    display: block;
+  }
+
+  .nav-overlay.active {
+    transform: translateX(0);
+  }
+}
