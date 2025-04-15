@@ -3,7 +3,15 @@
 .bg-vtdt {
     background-color: #282560;
 }
-
+.border-vtdt {
+  border-color: #282560;
+}
+.h-px-750{
+  height: 750px;
+}
+.w-px-750{
+  width: 750px;
+}
 
 .navbar-toggler {
     width: 50px;
