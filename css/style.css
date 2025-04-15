@@ -25,6 +25,31 @@
     box-shadow: none;
 }
 
+.rectangle {
+  border-radius: 8px;
+  border-width: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+  border-color: #282560;
+  border-style: solid;
+  background-color: transparent;
+  width: 600px;
+  height: 300px;
+  margin-bottom: 3rem;
+}
+
+.oval {
+  border-radius: 999px;
+  padding: 80px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #282560;
+  width: 500px;
+  height: 300px;
+  background-color: transparent;
+}
+
+
   @media screen and (max-width: 991px) {
     .navbar-collapse.collapse:not(.show) {
       display: block;
